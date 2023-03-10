@@ -5,10 +5,10 @@ outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI").F
 
 # Vincular pastas que vão ser salvas
 inbox = outlook.Folders('Inbox')
-pasta1_folder = inbox.Folders('Pasta1')
-past2_folder = pasta1_folder.Folders['Archive Monitoring']
-pasta3_subfolder = pasta1_folder.Folders['Job Monitoring']
-pasta4_folder = pasta1_folder.Folders['TIPS Monitoring']
+pasta1_folder = inbox.Folders('Nomedapasta')
+past2_folder = pasta1_folder.Folders['Nomedapasta2']
+pasta3_subfolder = pasta1_folder.Folders['Nomedapasta3']
+pasta4_folder = pasta1_folder.Folders['Nomedapasta4']
 
 # Mover e-mails
 for message in inbox.Items:
